@@ -87,32 +87,7 @@ function grainTriangle(x0, y0, x1, y1, x2, y2){
 
 ///////////////////////////////////////////////
 
-// MATH FUNCTIONS
 
-function randInt(min, max){ return int(random(min, max+1)); }
-
-function distSq(x1, y1, x2, y2){ return (x2 - x1)**2 + (y2 - y1)**2; }
-
-// LINEAR AND NON LINEAR MAPPING
-// EXPIN EXPOUT EXPINOUT
-// QUADRATICIN OUT
-
-function expInOut(x) {
-  if(x == 0.0 || x == 1.0) return x;
-
-  	if(x < 0.5){
-  		return(0.5 * pow(2, (20 * x) - 10));
-  	}
-  	else{
-  		return(-0.5 * pow(2, (-20 * x) + 10) + 1);
-  	}
- }
-
- function isPointinCircle(px, py, cx, cy, cr){
- 	return (distSq(px, py, cx, cy) < cr**2);
- }
-
- function isPointinSquare(){}
 
 
  // DRAW
