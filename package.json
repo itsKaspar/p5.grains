@@ -1,0 +1,25 @@
+{
+  "name": "p5.grains",
+  "version": "1.0.0",
+  "description": "Drawing and handling grains in p5.js ",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify main.js > build/qtree.js",
+    "postbuild": "terser build/qtree.js -cm -o build/qtree.min.js",
+    "server": "python -m http.server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsKaspar/p5.grains.git"
+  },
+  "keywords": [
+    "p5",
+    "draw"
+  ],
+  "author": "Kaspar Ravel <kaspar.ravel@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/itsKaspar/p5.grains/issues"
+  },
+  "homepage": "https://github.com/itsKaspar/p5.grains#readme"
+}
