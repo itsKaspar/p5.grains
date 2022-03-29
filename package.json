@@ -25,5 +25,8 @@
   "devDependencies": {
     "browserify": "^17.0.0",
     "terser": "^5.12.1"
+  },
+  "dependencies": {
+    "maths": "github:itsKaspar/Maths"
   }
 }
